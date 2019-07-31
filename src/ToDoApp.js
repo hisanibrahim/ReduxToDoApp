@@ -7,6 +7,11 @@ import {
 import AddToDo from './containers/AddToDo'
 
 class ToDoApp extends Component {
+
+    state = {
+        todos: [],
+        visibilityFilter: 'SHOW_ALL'
+    }
     render() {
         return (
             <View style={styles.container}>

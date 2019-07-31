@@ -4,7 +4,8 @@ import {
     Text,
     StyleSheet,
     TextInput,
-    TouchableOpacity
+    TouchableOpacity,
+    Alert,
 } from "react-native";
 
 class AddToDo extends Component {
@@ -15,7 +16,7 @@ class AddToDo extends Component {
                     placeholder="Eg. Learn Redux"
                     style={{ borderWidth: 1, borderColor: '#f2f2e1', backgroundColor: '#eaeaea', height: 50, flex: 1, padding: 5 }}
                 />
-                <TouchableOpacity>
+                <TouchableOpacity onPress={() => Alert.alert('Added')}>
                     <View style={{ fontSize: 30, backgroundColor: '#eaeaea', height: 50, alignItems: 'center', justifyContent: 'center', flex: 1 }}>
                         <Text style={{ fontSize: 30, color: '#de9595', padding: 10 }}>+</Text>
                     </View>

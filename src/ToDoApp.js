@@ -5,17 +5,17 @@ import {
     StyleSheet
 } from "react-native";
 import AddToDo from './containers/AddToDo'
+import VisibleToDos from "./containers/VisibleToDos";
 
 class ToDoApp extends Component {
 
-    state = {
-        todos: [],
-        visibilityFilter: 'SHOW_ALL'
-    }
     render() {
         return (
             <View style={styles.container}>
                 <AddToDo />
+                <View>
+                    <VisibleToDos />
+                </View>
             </View>
         );
     }

@@ -13,6 +13,10 @@ const ToDoList = ({ todos, toggleTodo }) => (
                 onPress={() => toggleTodo(todo.id)}>
                 <Text style={{
                     fontSize: 24,
+                    marginTop: 10,
+                    padding: 10,
+                    marginBottom: 10,
+                    backgroundColor: '#d4d4d4',
                     textDecorationLine: todo.completed ? "line-through" : "none"
                 }}>{todo.text} </Text>
             </TouchableOpacity>

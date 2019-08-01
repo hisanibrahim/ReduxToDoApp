@@ -8,13 +8,15 @@ import {
     Alert,
 } from "react-native";
 import { connect } from 'react-redux'
+import { addTodo } from '../actions'
+
 class AddToDo extends Component {
 
     state = {
         text: ''
     }
     addTodo = (text) => {
-        this.props.dispatch({ type: 'ADD_TODO', text })
+        this.props.dispatch(addTodo(text))
         this.setState({ text: '' })
     }
     render() {
